@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1817535722E42D5C00BC2192 /* AddHangulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1817535622E42D5C00BC2192 /* AddHangulViewController.swift */; };
 		181BBC2022E05D7200E110B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BBC1F22E05D7200E110B3 /* AppDelegate.swift */; };
 		181BBC2222E05D7200E110B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BBC2122E05D7200E110B3 /* ViewController.swift */; };
 		181BBC2522E05D7200E110B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181BBC2322E05D7200E110B3 /* Main.storyboard */; };
@@ -15,6 +16,17 @@
 		181BBC2D22E05D7400E110B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181BBC2B22E05D7400E110B3 /* LaunchScreen.storyboard */; };
 		181BBC3822E05D7400E110B3 /* Flash_Card_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BBC3722E05D7400E110B3 /* Flash_Card_AppTests.swift */; };
 		181BBC4322E05D7400E110B3 /* Flash_Card_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BBC4222E05D7400E110B3 /* Flash_Card_AppUITests.swift */; };
+		183F174322E4029600EDCC42 /* AddKanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183F174222E4029600EDCC42 /* AddKanjiViewController.swift */; };
+		183F174522E4071500EDCC42 /* Hangul.swift in Sources */ = {isa = PBXBuildFile; fileRef = 183F174422E4071500EDCC42 /* Hangul.swift */; };
+		1843A28E22E1C4B400EE54E7 /* CircleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843A28D22E1C4B400EE54E7 /* CircleCollectionViewCell.swift */; };
+		184CFD7F22E1516C0042AA4B /* KanjiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CFD7E22E1516C0042AA4B /* KanjiViewController.swift */; };
+		186AC82922E7FA2D00F2B5CB /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AC82822E7FA2D00F2B5CB /* English.swift */; };
+		186AC82B22E7FDF400F2B5CB /* EnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AC82A22E7FDF400F2B5CB /* EnglishViewController.swift */; };
+		186AC82D22E8015B00F2B5CB /* AddEnglishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186AC82C22E8015B00F2B5CB /* AddEnglishViewController.swift */; };
+		186AC83122E80ACE00F2B5CB /* lauch.png in Resources */ = {isa = PBXBuildFile; fileRef = 186AC83022E80ACE00F2B5CB /* lauch.png */; };
+		186AC83322E80BCC00F2B5CB /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 186AC83222E80BCC00F2B5CB /* launch.png */; };
+		18C3E3E122E072450062E08B /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E3E022E072450062E08B /* Kanji.swift */; };
+		18D12FE822E45D020097B9F3 /* HangulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D12FE722E45D020097B9F3 /* HangulViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1817535622E42D5C00BC2192 /* AddHangulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHangulViewController.swift; sourceTree = "<group>"; };
 		181BBC1C22E05D7200E110B3 /* Flash Card App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Flash Card App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181BBC1F22E05D7200E110B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		181BBC2122E05D7200E110B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +62,17 @@
 		181BBC3E22E05D7400E110B3 /* Flash Card AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Flash Card AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		181BBC4222E05D7400E110B3 /* Flash_Card_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flash_Card_AppUITests.swift; sourceTree = "<group>"; };
 		181BBC4422E05D7400E110B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		183F174222E4029600EDCC42 /* AddKanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddKanjiViewController.swift; sourceTree = "<group>"; };
+		183F174422E4071500EDCC42 /* Hangul.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hangul.swift; sourceTree = "<group>"; };
+		1843A28D22E1C4B400EE54E7 /* CircleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollectionViewCell.swift; sourceTree = "<group>"; };
+		184CFD7E22E1516C0042AA4B /* KanjiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiViewController.swift; sourceTree = "<group>"; };
+		186AC82822E7FA2D00F2B5CB /* English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
+		186AC82A22E7FDF400F2B5CB /* EnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishViewController.swift; sourceTree = "<group>"; };
+		186AC82C22E8015B00F2B5CB /* AddEnglishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEnglishViewController.swift; sourceTree = "<group>"; };
+		186AC83022E80ACE00F2B5CB /* lauch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = lauch.png; path = Assets.xcassets/lauch.png; sourceTree = "<group>"; };
+		186AC83222E80BCC00F2B5CB /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = Assets.xcassets/launch.png; sourceTree = "<group>"; };
+		18C3E3E022E072450062E08B /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
+		18D12FE722E45D020097B9F3 /* HangulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangulViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +123,19 @@
 		181BBC1E22E05D7200E110B3 /* Flash Card App */ = {
 			isa = PBXGroup;
 			children = (
+				18C3E3DF22E0722E0062E08B /* Model */,
 				181BBC1F22E05D7200E110B3 /* AppDelegate.swift */,
 				181BBC2122E05D7200E110B3 /* ViewController.swift */,
+				184CFD7E22E1516C0042AA4B /* KanjiViewController.swift */,
+				18D12FE722E45D020097B9F3 /* HangulViewController.swift */,
+				186AC82A22E7FDF400F2B5CB /* EnglishViewController.swift */,
+				1843A28D22E1C4B400EE54E7 /* CircleCollectionViewCell.swift */,
+				1817535622E42D5C00BC2192 /* AddHangulViewController.swift */,
+				183F174222E4029600EDCC42 /* AddKanjiViewController.swift */,
+				186AC82C22E8015B00F2B5CB /* AddEnglishViewController.swift */,
 				181BBC2322E05D7200E110B3 /* Main.storyboard */,
+				186AC83022E80ACE00F2B5CB /* lauch.png */,
+				186AC83222E80BCC00F2B5CB /* launch.png */,
 				181BBC2922E05D7400E110B3 /* Assets.xcassets */,
 				181BBC2B22E05D7400E110B3 /* LaunchScreen.storyboard */,
 				181BBC2E22E05D7400E110B3 /* Info.plist */,
@@ -126,6 +160,16 @@
 				181BBC4422E05D7400E110B3 /* Info.plist */,
 			);
 			path = "Flash Card AppUITests";
+			sourceTree = "<group>";
+		};
+		18C3E3DF22E0722E0062E08B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18C3E3E022E072450062E08B /* Kanji.swift */,
+				183F174422E4071500EDCC42 /* Hangul.swift */,
+				186AC82822E7FA2D00F2B5CB /* English.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				181BBC2D22E05D7400E110B3 /* LaunchScreen.storyboard in Resources */,
+				186AC83322E80BCC00F2B5CB /* launch.png in Resources */,
+				186AC83122E80ACE00F2B5CB /* lauch.png in Resources */,
 				181BBC2A22E05D7400E110B3 /* Assets.xcassets in Resources */,
 				181BBC2522E05D7200E110B3 /* Main.storyboard in Resources */,
 			);
@@ -259,9 +305,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				184CFD7F22E1516C0042AA4B /* KanjiViewController.swift in Sources */,
+				18D12FE822E45D020097B9F3 /* HangulViewController.swift in Sources */,
 				181BBC2222E05D7200E110B3 /* ViewController.swift in Sources */,
+				186AC82B22E7FDF400F2B5CB /* EnglishViewController.swift in Sources */,
+				183F174322E4029600EDCC42 /* AddKanjiViewController.swift in Sources */,
+				186AC82922E7FA2D00F2B5CB /* English.swift in Sources */,
+				1843A28E22E1C4B400EE54E7 /* CircleCollectionViewCell.swift in Sources */,
 				181BBC2822E05D7200E110B3 /* Flash_Card_App.xcdatamodeld in Sources */,
 				181BBC2022E05D7200E110B3 /* AppDelegate.swift in Sources */,
+				186AC82D22E8015B00F2B5CB /* AddEnglishViewController.swift in Sources */,
+				1817535722E42D5C00BC2192 /* AddHangulViewController.swift in Sources */,
+				183F174522E4071500EDCC42 /* Hangul.swift in Sources */,
+				18C3E3E122E072450062E08B /* Kanji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

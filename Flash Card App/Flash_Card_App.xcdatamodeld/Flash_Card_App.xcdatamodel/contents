@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="English" representedClassName="English" syncable="YES" codeGenerationType="class">
+        <attribute name="example" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Hangul" representedClassName="Hangul" syncable="YES" codeGenerationType="class">
+        <attribute name="example" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Kanji" representedClassName="Kanji" syncable="YES" codeGenerationType="class">
+        <attribute name="example" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="hiragana" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Hangul" positionX="-54" positionY="18" width="128" height="90"/>
+        <element name="Kanji" positionX="-63" positionY="-18" width="128" height="105"/>
+        <element name="English" positionX="-45" positionY="36" width="128" height="90"/>
+    </elements>
 </model>

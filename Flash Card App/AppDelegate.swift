@@ -11,12 +11,18 @@ import CoreData
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    static var managedObjectContext: NSManagedObjectContext?
     var window: UIWindow?
-
+    static var shared = {
+        return UIApplication.shared.delegate as! AppDelegate
+    }()
+  
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        Thread.sleep(forTimeInterval: 1)
         // Override point for customization after application launch.
+        AppDelegate.managedObjectContext = persistentContainer.viewContext
         return true
     }
 
