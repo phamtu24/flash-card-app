@@ -764,19 +764,19 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="276" height="498"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学校" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgh-9r-3QL">
-                                                            <rect key="frame" x="78" y="25" width="120.5" height="72"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
+                                                            <rect key="frame" x="93" y="25" width="90.5" height="54"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="普段私は全然歩いてないんだ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PJR-oe-9jx">
-                                                            <rect key="frame" x="10" y="263" width="256" height="23"/>
+                                                            <rect key="frame" x="10" y="245" width="256" height="23"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trường học" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="loA-Tw-cYg">
-                                                            <rect key="frame" x="20" y="204" width="236" height="29"/>
+                                                            <rect key="frame" x="20" y="186" width="236" height="29"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -800,8 +800,8 @@
                                                     <rect key="frame" x="0.0" y="0.0" width="276" height="498"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="学校" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zf4-pg-L70">
-                                                            <rect key="frame" x="78" y="213" width="120.5" height="72"/>
-                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="60"/>
+                                                            <rect key="frame" x="93" y="222" width="90.5" height="54"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="black" pointSize="45"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>

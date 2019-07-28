@@ -11,7 +11,6 @@ import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
 
-    
     var languageList = ["日本語", "한국어", "English"]
  
     override func viewDidLoad() {
