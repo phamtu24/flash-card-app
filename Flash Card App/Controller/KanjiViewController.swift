@@ -1,15 +1,17 @@
 //
-//  HangulViewController.swift
+//  KanjiViewController.swift
 //  Flash Card App
 //
-//  Created by Tu Pham on 7/21/19.
+//  Created by Tu Pham on 7/19/19.
 //  Copyright © 2019 Tu Pham. All rights reserved.
 //
 
+
+
 import UIKit
 
-class HangulViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    var listWord = [Hangul]()
+class KanjiViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    var listWord = [Kanji]()
     @IBOutlet weak var totalPage: UILabel!
     @IBOutlet var mainView: UIView!
     @IBOutlet weak var flowLayout: UICollectionViewFlowLayout!
@@ -17,18 +19,22 @@ class HangulViewController: UIViewController, UICollectionViewDelegate, UICollec
     @IBOutlet weak var popUpView: UIView!
     let itemSize: CGFloat = 15
     let innerItemSpacing: CGFloat = 15
+    var lessonDate: NSDate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .white
-        fetchData()
+        fetchData(lessonDate: lessonDate!)
         totalPage.text = "1 / \(listWord.count)"
+//        Kanji.updateLessonDate()
         // Do any additional setup after loading the view.
     }
+
+
     
-    
-    
-    func fetchData() {
-        listWord = Hangul.fetchData()
+    func fetchData(lessonDate: NSDate) {
+        listWord = Kanji.fetchData(lessonDate: lessonDate)
+        listWord.shuffle()
         collectionView.reloadData()
         
     }
@@ -54,11 +60,12 @@ class HangulViewController: UIViewController, UICollectionViewDelegate, UICollec
     }
     
     func collectionView(_ collectionView1: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! HangulCVCell
+        let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ReuseCell
         cell.frontWord.text = listWord[indexPath.row].word
         cell.behindWord.text = cell.frontWord.text
         cell.meaning.text = listWord[indexPath.row].meaning
         cell.example.text = listWord[indexPath.row].example
+        cell.hiragana?.text = listWord[indexPath.row].hiragana
         
         return cell
     }
@@ -67,8 +74,8 @@ class HangulViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         let alert = UIAlertController(title: "Chú ý", message: "Bạn đã chắc chắn học hết từ ?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "はい", style: .default, handler: { (action) in
-            Hangul.deleteAll()
-            self.listWord.removeAll()
+//            Kanji.deleteAll()
+//            self.listWord.removeAll()
             UIView.animate(withDuration: 0.8, animations: {
                 self.popUpView.alpha = 1
             }) { (true) in
@@ -76,8 +83,8 @@ class HangulViewController: UIViewController, UICollectionViewDelegate, UICollec
                     self.popUpView.alpha = 0
                 })
             }
-            self.totalPage.text = "0 / 0"
-            self.collectionView.reloadData()
+//             self.totalPage.text = "0 / 0"
+//             self.collectionView.reloadData()
             
         }))
         alert.addAction(UIAlertAction(title: "いいえ", style: .cancel, handler: nil))
@@ -85,58 +92,5 @@ class HangulViewController: UIViewController, UICollectionViewDelegate, UICollec
         
         
     }
-    
-}
-
-class HangulCVCell: UICollectionViewCell {
-    
-   
-    @IBOutlet weak var behindView: UIView!
-    @IBOutlet weak var frontWord: UILabel!
-    @IBOutlet weak var frontView: UIView!
-    
-    @IBOutlet weak var behindWord: UILabel!
-    @IBOutlet weak var meaning: UILabel!
-    @IBOutlet weak var example: UILabel!
-    var isFlipped = false
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.layer.cornerRadius = 20
-        frontView.layer.cornerRadius = 20
-        behindView.layer.cornerRadius = 20
-    }
-    override func prepareForReuse() {
-        if isFlipped == true {
-            isFlipped = !isFlipped
-            
-            let cardToFlip = isFlipped ? frontView : behindView
-            let bottomCard = isFlipped ? behindView : frontView
-            
-            UIView.transition(from: cardToFlip!,
-                              to: bottomCard!,
-                              duration: 0,
-                              options: [.transitionFlipFromRight, .showHideTransitionViews],
-                              completion: nil)
-        }
-        
-    }
-    fileprivate func flip() {
-        isFlipped = !isFlipped
-        
-        let cardToFlip = isFlipped ? frontView : behindView
-        let bottomCard = isFlipped ? behindView : frontView
-        
-        UIView.transition(from: cardToFlip!,
-                          to: bottomCard!,
-                          duration: 0.5,
-                          options: [.transitionFlipFromRight, .showHideTransitionViews],
-                          completion: nil)
-    }
-    
-    @IBAction func click(_ sender: Any) {
-        flip()
-    }
-    
-    
     
 }

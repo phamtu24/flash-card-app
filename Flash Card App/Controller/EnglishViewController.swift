@@ -17,6 +17,7 @@ class EnglishViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var popUpView: UIView!
     let itemSize: CGFloat = 15
     let innerItemSpacing: CGFloat = 15
+    var lessonDate:NSDate?
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .white
@@ -29,6 +30,7 @@ class EnglishViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     func fetchData() {
         listWord = English.fetchData()
+        listWord.shuffle()
         collectionView.reloadData()
         
     }
@@ -54,7 +56,7 @@ class EnglishViewController: UIViewController, UICollectionViewDelegate, UIColle
     }
     
     func collectionView(_ collectionView1: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! EnglishCVCell
+        let cell = collectionView1.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! ReuseCell
         cell.frontWord.text = listWord[indexPath.row].word
         cell.behindWord.text = cell.frontWord.text
         cell.meaning.text = listWord[indexPath.row].meaning
@@ -85,58 +87,5 @@ class EnglishViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         
     }
-    
-}
-
-class EnglishCVCell: UICollectionViewCell {
-    
-    
-    @IBOutlet weak var behindView: UIView!
-    @IBOutlet weak var frontWord: UILabel!
-    @IBOutlet weak var frontView: UIView!
-    
-    @IBOutlet weak var behindWord: UILabel!
-    @IBOutlet weak var meaning: UILabel!
-    @IBOutlet weak var example: UILabel!
-    var isFlipped = false
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        self.layer.cornerRadius = 20
-        frontView.layer.cornerRadius = 20
-        behindView.layer.cornerRadius = 20
-    }
-    override func prepareForReuse() {
-        if isFlipped == true {
-            isFlipped = !isFlipped
-            
-            let cardToFlip = isFlipped ? frontView : behindView
-            let bottomCard = isFlipped ? behindView : frontView
-            
-            UIView.transition(from: cardToFlip!,
-                              to: bottomCard!,
-                              duration: 0,
-                              options: [.transitionFlipFromRight, .showHideTransitionViews],
-                              completion: nil)
-        }
-        
-    }
-    fileprivate func flip() {
-        isFlipped = !isFlipped
-        
-        let cardToFlip = isFlipped ? frontView : behindView
-        let bottomCard = isFlipped ? behindView : frontView
-        
-        UIView.transition(from: cardToFlip!,
-                          to: bottomCard!,
-                          duration: 0.5,
-                          options: [.transitionFlipFromRight, .showHideTransitionViews],
-                          completion: nil)
-    }
-    
-    @IBAction func click(_ sender: Any) {
-        flip()
-    }
-    
-    
     
 }

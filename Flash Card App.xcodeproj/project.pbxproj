@@ -27,6 +27,21 @@
 		186AC83322E80BCC00F2B5CB /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = 186AC83222E80BCC00F2B5CB /* launch.png */; };
 		18C3E3E122E072450062E08B /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E3E022E072450062E08B /* Kanji.swift */; };
 		18D12FE822E45D020097B9F3 /* HangulViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D12FE722E45D020097B9F3 /* HangulViewController.swift */; };
+		F06B088D2467E507006E98CF /* ReuseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B088C2467E507006E98CF /* ReuseCell.swift */; };
+		F06B088F2467E945006E98CF /* LanguageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B088E2467E945006E98CF /* LanguageCell.swift */; };
+		F06B0891246801C9006E98CF /* LessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0890246801C9006E98CF /* LessonTableViewController.swift */; };
+		F06B0893246802D7006E98CF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06B0892246802D7006E98CF /* Extension.swift */; };
+		F076D25D24683B930089C1BA /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = F076D25C24683B930089C1BA /* Lesson.swift */; };
+		F09542402466FE6A002FDFB0 /* Hangul+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09542382466FE6A002FDFB0 /* Hangul+CoreDataClass.swift */; };
+		F09542412466FE6A002FDFB0 /* Hangul+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09542392466FE6A002FDFB0 /* Hangul+CoreDataProperties.swift */; };
+		F09542422466FE6A002FDFB0 /* Lesson+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095423A2466FE6A002FDFB0 /* Lesson+CoreDataClass.swift */; };
+		F09542432466FE6A002FDFB0 /* Lesson+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095423B2466FE6A002FDFB0 /* Lesson+CoreDataProperties.swift */; };
+		F09542442466FE6A002FDFB0 /* Kanji+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095423C2466FE6A002FDFB0 /* Kanji+CoreDataClass.swift */; };
+		F09542452466FE6A002FDFB0 /* Kanji+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095423D2466FE6A002FDFB0 /* Kanji+CoreDataProperties.swift */; };
+		F09542462466FE6A002FDFB0 /* English+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095423E2466FE6A002FDFB0 /* English+CoreDataClass.swift */; };
+		F09542472466FE6A002FDFB0 /* English+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F095423F2466FE6A002FDFB0 /* English+CoreDataProperties.swift */; };
+		F09BD37D2464D96D001C1561 /* constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F09BD37C2464D96D001C1561 /* constant.swift */; };
+		F0FD58112466A68900C7E430 /* SpecificLanguage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FD58102466A68900C7E430 /* SpecificLanguage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +88,21 @@
 		186AC83222E80BCC00F2B5CB /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = launch.png; path = Assets.xcassets/launch.png; sourceTree = "<group>"; };
 		18C3E3E022E072450062E08B /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kanji.swift; sourceTree = "<group>"; };
 		18D12FE722E45D020097B9F3 /* HangulViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HangulViewController.swift; sourceTree = "<group>"; };
+		F06B088C2467E507006E98CF /* ReuseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseCell.swift; sourceTree = "<group>"; };
+		F06B088E2467E945006E98CF /* LanguageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageCell.swift; sourceTree = "<group>"; };
+		F06B0890246801C9006E98CF /* LessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonTableViewController.swift; sourceTree = "<group>"; };
+		F06B0892246802D7006E98CF /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F076D25C24683B930089C1BA /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		F09542382466FE6A002FDFB0 /* Hangul+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hangul+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F09542392466FE6A002FDFB0 /* Hangul+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hangul+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F095423A2466FE6A002FDFB0 /* Lesson+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F095423B2466FE6A002FDFB0 /* Lesson+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Lesson+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F095423C2466FE6A002FDFB0 /* Kanji+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kanji+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F095423D2466FE6A002FDFB0 /* Kanji+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Kanji+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F095423E2466FE6A002FDFB0 /* English+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "English+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F095423F2466FE6A002FDFB0 /* English+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "English+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F09BD37C2464D96D001C1561 /* constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = constant.swift; sourceTree = "<group>"; };
+		F0FD58102466A68900C7E430 /* SpecificLanguage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecificLanguage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,16 +153,19 @@
 		181BBC1E22E05D7200E110B3 /* Flash Card App */ = {
 			isa = PBXGroup;
 			children = (
+				F09542382466FE6A002FDFB0 /* Hangul+CoreDataClass.swift */,
+				F09542392466FE6A002FDFB0 /* Hangul+CoreDataProperties.swift */,
+				F095423A2466FE6A002FDFB0 /* Lesson+CoreDataClass.swift */,
+				F095423B2466FE6A002FDFB0 /* Lesson+CoreDataProperties.swift */,
+				F095423C2466FE6A002FDFB0 /* Kanji+CoreDataClass.swift */,
+				F095423D2466FE6A002FDFB0 /* Kanji+CoreDataProperties.swift */,
+				F095423E2466FE6A002FDFB0 /* English+CoreDataClass.swift */,
+				F095423F2466FE6A002FDFB0 /* English+CoreDataProperties.swift */,
+				F09BD37B2464D957001C1561 /* Utils */,
+				F09BD37A2464D91B001C1561 /* Controller */,
+				F09BD3792464D90C001C1561 /* View */,
 				18C3E3DF22E0722E0062E08B /* Model */,
 				181BBC1F22E05D7200E110B3 /* AppDelegate.swift */,
-				181BBC2122E05D7200E110B3 /* ViewController.swift */,
-				184CFD7E22E1516C0042AA4B /* KanjiViewController.swift */,
-				18D12FE722E45D020097B9F3 /* HangulViewController.swift */,
-				186AC82A22E7FDF400F2B5CB /* EnglishViewController.swift */,
-				1843A28D22E1C4B400EE54E7 /* CircleCollectionViewCell.swift */,
-				1817535622E42D5C00BC2192 /* AddHangulViewController.swift */,
-				183F174222E4029600EDCC42 /* AddKanjiViewController.swift */,
-				186AC82C22E8015B00F2B5CB /* AddEnglishViewController.swift */,
 				181BBC2322E05D7200E110B3 /* Main.storyboard */,
 				186AC83022E80ACE00F2B5CB /* lauch.png */,
 				186AC83222E80BCC00F2B5CB /* launch.png */,
@@ -168,8 +201,44 @@
 				18C3E3E022E072450062E08B /* Kanji.swift */,
 				183F174422E4071500EDCC42 /* Hangul.swift */,
 				186AC82822E7FA2D00F2B5CB /* English.swift */,
+				F0FD58102466A68900C7E430 /* SpecificLanguage.swift */,
+				F076D25C24683B930089C1BA /* Lesson.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		F09BD3792464D90C001C1561 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F06B088C2467E507006E98CF /* ReuseCell.swift */,
+				1843A28D22E1C4B400EE54E7 /* CircleCollectionViewCell.swift */,
+				F06B088E2467E945006E98CF /* LanguageCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F09BD37A2464D91B001C1561 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				181BBC2122E05D7200E110B3 /* ViewController.swift */,
+				184CFD7E22E1516C0042AA4B /* KanjiViewController.swift */,
+				18D12FE722E45D020097B9F3 /* HangulViewController.swift */,
+				186AC82A22E7FDF400F2B5CB /* EnglishViewController.swift */,
+				1817535622E42D5C00BC2192 /* AddHangulViewController.swift */,
+				183F174222E4029600EDCC42 /* AddKanjiViewController.swift */,
+				186AC82C22E8015B00F2B5CB /* AddEnglishViewController.swift */,
+				F06B0890246801C9006E98CF /* LessonTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F09BD37B2464D957001C1561 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F09BD37C2464D96D001C1561 /* constant.swift */,
+				F06B0892246802D7006E98CF /* Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,18 +375,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				184CFD7F22E1516C0042AA4B /* KanjiViewController.swift in Sources */,
+				F09542442466FE6A002FDFB0 /* Kanji+CoreDataClass.swift in Sources */,
+				F09542412466FE6A002FDFB0 /* Hangul+CoreDataProperties.swift in Sources */,
+				F09BD37D2464D96D001C1561 /* constant.swift in Sources */,
 				18D12FE822E45D020097B9F3 /* HangulViewController.swift in Sources */,
 				181BBC2222E05D7200E110B3 /* ViewController.swift in Sources */,
+				F09542422466FE6A002FDFB0 /* Lesson+CoreDataClass.swift in Sources */,
 				186AC82B22E7FDF400F2B5CB /* EnglishViewController.swift in Sources */,
 				183F174322E4029600EDCC42 /* AddKanjiViewController.swift in Sources */,
 				186AC82922E7FA2D00F2B5CB /* English.swift in Sources */,
+				F06B088D2467E507006E98CF /* ReuseCell.swift in Sources */,
 				1843A28E22E1C4B400EE54E7 /* CircleCollectionViewCell.swift in Sources */,
+				F09542402466FE6A002FDFB0 /* Hangul+CoreDataClass.swift in Sources */,
 				181BBC2822E05D7200E110B3 /* Flash_Card_App.xcdatamodeld in Sources */,
 				181BBC2022E05D7200E110B3 /* AppDelegate.swift in Sources */,
+				F09542462466FE6A002FDFB0 /* English+CoreDataClass.swift in Sources */,
 				186AC82D22E8015B00F2B5CB /* AddEnglishViewController.swift in Sources */,
 				1817535722E42D5C00BC2192 /* AddHangulViewController.swift in Sources */,
+				F06B0893246802D7006E98CF /* Extension.swift in Sources */,
+				F076D25D24683B930089C1BA /* Lesson.swift in Sources */,
+				F06B088F2467E945006E98CF /* LanguageCell.swift in Sources */,
+				F0FD58112466A68900C7E430 /* SpecificLanguage.swift in Sources */,
 				183F174522E4071500EDCC42 /* Hangul.swift in Sources */,
+				F09542452466FE6A002FDFB0 /* Kanji+CoreDataProperties.swift in Sources */,
+				F09542432466FE6A002FDFB0 /* Lesson+CoreDataProperties.swift in Sources */,
+				F06B0891246801C9006E98CF /* LessonTableViewController.swift in Sources */,
 				18C3E3E122E072450062E08B /* Kanji.swift in Sources */,
+				F09542472466FE6A002FDFB0 /* English+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,7 +577,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2GCT259CX;
+				DEVELOPMENT_TEAM = 5UEV5W6S97;
 				INFOPLIST_FILE = "Flash Card App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -511,7 +595,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z2GCT259CX;
+				DEVELOPMENT_TEAM = 5UEV5W6S97;
 				INFOPLIST_FILE = "Flash Card App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

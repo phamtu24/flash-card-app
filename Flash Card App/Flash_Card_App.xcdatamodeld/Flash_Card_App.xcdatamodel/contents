@@ -1,24 +1,36 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18A391" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <entity name="English" representedClassName="English" syncable="YES" codeGenerationType="class">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="17G3025" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="English" representedClassName="English" syncable="YES">
         <attribute name="example" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lession" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="englishList" inverseEntity="Lesson" syncable="YES"/>
     </entity>
-    <entity name="Hangul" representedClassName="Hangul" syncable="YES" codeGenerationType="class">
+    <entity name="Hangul" representedClassName="Hangul" syncable="YES">
         <attribute name="example" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lesson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="hangulList" inverseEntity="Lesson" syncable="YES"/>
     </entity>
-    <entity name="Kanji" representedClassName="Kanji" syncable="YES" codeGenerationType="class">
+    <entity name="Kanji" representedClassName="Kanji" syncable="YES">
         <attribute name="example" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="hiragana" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="lessonDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
         <attribute name="meaning" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="word" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="lesson" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Lesson" inverseName="kanjiList" inverseEntity="Lesson" syncable="YES"/>
+    </entity>
+    <entity name="Lesson" representedClassName="Lesson" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="type" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="englishList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="English" inverseName="lession" inverseEntity="English" syncable="YES"/>
+        <relationship name="hangulList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Hangul" inverseName="lesson" inverseEntity="Hangul" syncable="YES"/>
+        <relationship name="kanjiList" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Kanji" inverseName="lesson" inverseEntity="Kanji" syncable="YES"/>
     </entity>
     <elements>
-        <element name="Hangul" positionX="-54" positionY="18" width="128" height="90"/>
-        <element name="Kanji" positionX="-63" positionY="-18" width="128" height="105"/>
-        <element name="English" positionX="-45" positionY="36" width="128" height="90"/>
+        <element name="English" positionX="79.96875" positionY="58.765625" width="128" height="105"/>
+        <element name="Hangul" positionX="-104.94140625" positionY="-93.0078125" width="128" height="105"/>
+        <element name="Kanji" positionX="74.625" positionY="-172.0234375" width="124.99609375" height="135"/>
+        <element name="Lesson" positionX="267.66796875" positionY="-57.12890625" width="128" height="120"/>
     </elements>
 </model>

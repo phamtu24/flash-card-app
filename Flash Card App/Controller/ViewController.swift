@@ -10,27 +10,35 @@ import UIKit
 import CoreData
 
 class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
-
+    
+    @IBOutlet weak var tableView: UITableView!
     var languageList = ["日本語", "한국어", "English"]
  
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationController?.navigationBar.tintColor = .white
-        // Do any additional setup after loading the view, typically from a nib.
+//        Kanji.updateLessonDate()
     }
-    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
-        let delay = 0.35
-        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
-            if indexPath.row == 0 {
-                self.performSegue(withIdentifier: "segue", sender: nil)
-            } else if indexPath.row == 1 {
-                self.performSegue(withIdentifier: "segue1", sender: nil)
-            } else {
-                self.performSegue(withIdentifier: "segue2", sender: nil)
-            }
-            
-        }
-        return indexPath
+//    func tableView(_ tableView: UITableView, willSelectRowAt indexPath: IndexPath) -> IndexPath?{
+//        let delay = 0.35
+//        DispatchQueue.main.asyncAfter(deadline: .now() + delay) {
+//            if indexPath.row == 0 {
+//                self.performSegue(withIdentifier: "segue", sender: nil)
+//            } else if indexPath.row == 1 {
+//                self.performSegue(withIdentifier: "segue1", sender: nil)
+//            } else {
+//                self.performSegue(withIdentifier: "segue2", sender: nil)
+//            }
+//
+//        }
+//
+//        return indexPath
+//    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let rowNumber = tableView.indexPathForSelectedRow?.row else { return }
+        let lessonTC = segue.destination as! LessonTableViewController
+        lessonTC.lessons = Lesson.getAllLesson(type: rowNumber)
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -65,13 +73,5 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
 }
 
-class LanguageCell: UITableViewCell {
-    @IBOutlet weak var imgFlag: UIImageView!
-    @IBOutlet weak var label: UILabel!
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: true)
-        self.accessoryType = isSelected ? .checkmark : .none
-    }
-}
+
 

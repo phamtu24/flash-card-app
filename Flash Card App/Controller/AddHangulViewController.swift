@@ -10,9 +10,9 @@ import UIKit
 
 class AddHangulViewController: UIViewController {
 
-    @IBOutlet weak var word: UITextField!
-    @IBOutlet weak var meaning: UITextField!
-    @IBOutlet weak var example: UITextField!
+    @IBOutlet weak var word: KoreanTextField!
+    @IBOutlet weak var meaning: VietnameseTextField!
+    @IBOutlet weak var example: KoreanTextField!
     @IBOutlet weak var popUpView: UIView!
     var listWord = [Hangul]()
     override func viewDidLoad() {
@@ -28,15 +28,19 @@ class AddHangulViewController: UIViewController {
         view.endEditing(true)
     }
     
-    
+    func resetField() {
+        word.text = ""
+        meaning.text = ""
+        example.text = ""
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         tabBarController?.navigationItem.title = "새로운 단어를 추가하다"
     }
     @IBAction func onClickInsert(_ sender: Any) {
         listWord = Hangul.fetchData()
-        if listWord.count >= 10 {
-            let alert = UIAlertController(title: "Chú ý", message: "Hãy học hết 10 từ", preferredStyle: .alert)
+        if listWord.count >= maxWord {
+            let alert = UIAlertController(title: "Chú ý", message: "Hãy học hết \(maxWord) từ", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "はい", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }
@@ -44,8 +48,9 @@ class AddHangulViewController: UIViewController {
             let alert = UIAlertController(title: "Chú ý", message: "Điền đầy đủ thông tin", preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: "はい", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
-        } else if  word.text != "" && meaning.text != "" && listWord.count < 10 {
+        } else if  word.text != "" && meaning.text != "" && listWord.count < maxWord {
             Hangul.insertNewWord(word: word.text!, meaning: meaning.text!, example: example.text ?? "")
+            resetField()
             UIView.animate(withDuration: 0.8, animations: {
                 self.popUpView.alpha = 1
             }) { (true) in
@@ -55,5 +60,6 @@ class AddHangulViewController: UIViewController {
             }
             
         }
+        dismissKeyboard()
     }
 }
